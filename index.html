@@ -11,32 +11,29 @@
   
 
     <h1>Expense Tracker</h1>
-    <h2>ADD NEW EXPENSE:</h2>
+
 
     <div id="form-box">
         <form id ="form">
+            <h2>ADD NEW EXPENSE</h2>
             <div>
                 <span id="expense">Expense:</span>
-                    <input type ="text" id ="expenseName" placeholder="What did you spend on?"> 
-            </div>
-
-            <div>
-                <span id="placeOfPurchase">Place of Purchase:</span>
+                    <input type ="text" id ="expenseName" placeholder="What did you spend it on?"> 
+                    <span id="placeOfPurchase">Place of Purchase:</span>
                     <input type="text" id="expensePlace" placeholder="Where did you purchase it?"></input>
             </div>
+
+        
             
             <div>
                 <span>Amount:</span>
                     <input type ="number" type ="text" id ="expenseAmount" placeholder="How much?">
-            </div>
-            
-            <div>
-                <span>Date:</span>
+                    <span>Date:</span>
                     <input type="date" id="expenseDate">
             </div>
-
-           
-        </form> <input type ="button" id ="addExpenseButton" value="Submit">
+            
+            <input type ="button" id ="addExpenseButton" value="Submit">
+        </form> 
     </div>
     
   
@@ -50,9 +47,11 @@
                 <th style="text-align: right" id="amount">Amount</th>
             </tr>
         </thead>
+        <tbody id='main-table'>
         <tr id="if-empty">
             <td colspan="4"><span>Your added items will be listed here!</span></td>
         </tr>
+        </tbody>
     </table>
     <script src ="scripts.js"></script>
 </body>
